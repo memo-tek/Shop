@@ -1,0 +1,421 @@
+:root {
+  --green: #d0f01b;
+  --light-gray: #f2f2f2;
+  --black: #090908;
+  --dark-gray: #4e4e50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background: var(--light-gray);
+}
+
+#nav-link-container {
+  display: flex;
+  gap: 40px;
+}
+
+#bag {
+  width: 30px;
+  height: 30px;
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: var(--black);
+  text-decoration: none;
+}
+
+#logo {
+  font-weight: bold;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--black);
+}
+
+#banner {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#left-banner {
+  width: 40%;
+}
+
+#right-banner {
+  width: 50%;
+}
+
+#right-banner-img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 7rem;
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.info-text {
+  color: var(--dark-gray);
+  max-width: 40ch;
+  margin: 20px 0;
+}
+
+.dark-btn-green {
+  background: var(--black);
+  color: var(--green);
+  padding: 15px 30px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 7px;
+}
+
+#card-container {
+  width: 80%;
+  margin: auto;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card {
+  border-radius: 7px;
+  overflow: hidden;
+  border: 1px solid var(--light-gray);
+}
+
+.bottom-card {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-shoe-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-price {
+  color: var(--dark-gray);
+  font-size: 0.9rem;
+}
+
+.card-btn {
+  color: var(--green);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  background: var(--black);
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#featured {
+  margin: 80px 0;
+}
+
+#advertisment {
+  margin: 80px 0 0 0;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#advertisment-container {
+  background: url(../img/advertisment.png);
+  height: 500px;
+  width: 80%;
+  margin: auto;
+  border-radius: 25px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 60px;
+}
+
+#advertisment-heading {
+  color: white;
+  font-family: "Anton", sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 400;
+  max-width: 20ch;
+}
+
+#advertisment-text {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 20px 0;
+  max-width: 40ch;
+}
+
+.btn-green {
+  width: fit-content;
+  padding: 15px 30px;
+  background: var(--green);
+  color: var(--black);
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a img {
+  width: 25px;
+  height: 25px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  gap: 15px;
+}
+
+#banner-about {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#banner-about-left {
+  width: 40%;
+}
+
+#banner-about-right {
+  width: 50%;
+}
+
+#banner-about-right img {
+  width: 100%;
+}
+
+#mission-container {
+  width: 80%;
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#mission-left-container {
+  width: 40%;
+}
+
+#mission-right-container {
+  width: 50%;
+}
+
+#mission-right-container img {
+  width: 100%;
+}
+
+#mission-heading {
+  font-size: 1rem;
+}
+
+#mission-subheading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+#mission-info {
+  color: var(--dark-gray);
+  width: 40ch;
+}
+
+#icons-container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.icon-img {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-heading {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.icon-info {
+  color: var(--dark-gray);
+}
+
+.contact-icon-img {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-icon-card {
+  display: flex;
+  gap: 25px;
+}
+
+#contact-container {
+  display: flex;
+  width: 80%;
+  margin: 80px auto;
+  justify-content: space-between;
+}
+
+#left-contact-container {
+  width: 40%;
+}
+
+#right-contact-container {
+  width: 40%;
+}
+
+#contact-heading {
+  font-size: 3.5rem;
+}
+
+#contact-info-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--light-gray);
+  border-radius: 7px;
+  outline: none;
+  margin-bottom: 17px;
+}
+
+.contact-label {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.contact-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--light-gray);
+  border-radius: 7px;
+  outline: none;
+  margin-bottom: 17px;
+  height: 200px;
+}
+
+@media screen and (max-width: 700px) {
+  #contact-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  #left-contact-container {
+    width: 100%;
+  }
+
+  #right-contact-container {
+    width: 100%;
+  }
+
+  #banner-about {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  #banner-about-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .info-text {
+    margin: 20px auto;
+  }
+
+  #banner-about-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  #mission-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  #mission-left-container {
+    width: 100%;
+  }
+
+  #mission-right-container {
+    width: 100%;
+  }
+
+  #advertisment-heading {
+    font-size: 2rem;
+  }
+
+  #advertisment-text {
+    max-width: 30ch;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #banner {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  #left-banner {
+    width: 100%;
+  }
+
+  #right-banner {
+    width: 100%;
+  }
+
+  .info-text {
+    margin: 20px auto;
+  }
+}

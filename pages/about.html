@@ -10,19 +10,34 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header>
       <nav>
         <a href="index.html" id="logo">SNEAKR</a>
+        <button
+          type="button"
+          id="menu-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <div id="nav-link-container">
           <a href="index.html" class="nav-link">SHOP</a>
           <a href="about.html" class="nav-link">ABOUT</a>
           <a href="contact.html" class="nav-link">CONTACT</a>
         </div>
-        <a href="">
-          <img id="bag" src="../img/shopping-bag.png" alt="" />
+        <a href="#" id="cart-link" aria-label="Shopping cart">
+          <i id="bag" class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+          <span id="cart-count" aria-label="Items in cart">0</span>
         </a>
       </nav>
       <div id="banner-about">
@@ -33,7 +48,9 @@
             aspernatur voluptatum molestias perferendis quae minima qui
             consequuntur quas tempora earum.
           </p>
-          <button class="dark-btn-green">Our Story</button>
+          <button type="button" class="dark-btn-green" id="our-story-btn">
+            Our Story
+          </button>
         </div>
         <div id="banner-about-right">
           <img src="../img/about.png" alt="" />
@@ -56,7 +73,7 @@
             </p>
             <div id="icons-container">
               <div class="icon-card">
-                <img class="icon-img" src="../img/solidarity.png" alt="" />
+                <i class="icon-img fa-solid fa-handshake" aria-hidden="true"></i>
                 <p class="icon-heading">Solidarity</p>
                 <p class="icon-info">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
@@ -65,7 +82,14 @@
               </div>
 
               <div class="icon-card">
-                <img class="icon-img" src="../img/heart.png" alt="" />
+                <button
+                  type="button"
+                  class="favorite-btn"
+                  aria-label="Add Passion to favorites"
+                  aria-pressed="false"
+                >
+                  <i class="icon-img fa-regular fa-heart" aria-hidden="true"></i>
+                </button>
                 <p class="icon-heading">Passion</p>
                 <p class="icon-info">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
@@ -74,7 +98,7 @@
               </div>
 
               <div class="icon-card">
-                <img class="icon-img" src="../img/shield.png" alt="" />
+                <i class="icon-img fa-solid fa-shield-halved" aria-hidden="true"></i>
                 <p class="icon-heading">Quality</p>
                 <p class="icon-info">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut,
@@ -84,21 +108,25 @@
             </div>
           </div>
           <div id="mission-right-container">
-            <img src="../img/wearing-shoes.png" alt="" />
+            <i
+              class="feature-icon fa-solid fa-person-walking"
+              aria-label="Person wearing shoes"
+            ></i>
           </div>
         </div>
       </section>
     </main>
     <footer>
       <a href="https://www.facebook.com">
-        <img src="../img/facebook.png" alt="" />
+        <i class="social-icon fa-brands fa-facebook" aria-hidden="true"></i>
       </a>
       <a href="https://www.facebook.com">
-        <img src="../img/instagram.png" alt="" />
+        <i class="social-icon fa-brands fa-instagram" aria-hidden="true"></i>
       </a>
       <a href="https://www.facebook.com">
-        <img src="../img/youtube.png" alt="" />
+        <i class="social-icon fa-brands fa-youtube" aria-hidden="true"></i>
       </a>
     </footer>
+    <script src="../js/script.js" defer></script>
   </body>
 </html>

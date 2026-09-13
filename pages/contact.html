@@ -10,19 +10,34 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header>
       <nav>
         <a href="index.html" id="logo">SNEAKR</a>
+        <button
+          type="button"
+          id="menu-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <div id="nav-link-container">
           <a href="index.html" class="nav-link">SHOP</a>
           <a href="about.html" class="nav-link">ABOUT</a>
           <a href="contact.html" class="nav-link">CONTACT</a>
         </div>
-        <a href="">
-          <img id="bag" src="../img/shopping-bag.png" alt="" />
+        <a href="#" id="cart-link" aria-label="Shopping cart">
+          <i id="bag" class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+          <span id="cart-count" aria-label="Items in cart">0</span>
         </a>
       </nav>
     </header>
@@ -38,7 +53,7 @@
           </p>
           <div id="contact-info-container">
             <div class="contact-icon-card">
-              <img class="contact-icon-img" src="../img/email.png" alt="" />
+              <i class="contact-icon-img fa-solid fa-envelope" aria-hidden="true"></i>
               <div>
                 <p class="bold">Email</p>
                 <p>mohammed.2406160@su.edu.eg</p>
@@ -46,11 +61,7 @@
             </div>
 
             <div class="contact-icon-card">
-              <img
-                class="contact-icon-img"
-                src="../img/phone-call.png"
-                alt=""
-              />
+              <i class="contact-icon-img fa-solid fa-phone" aria-hidden="true"></i>
               <div>
                 <p class="bold">Phone</p>
                 <p>+201069013253</p>
@@ -58,11 +69,7 @@
             </div>
 
             <div class="contact-icon-card">
-              <img
-                class="contact-icon-img"
-                src="../img/gps-navigation.png"
-                alt=""
-              />
+              <i class="contact-icon-img fa-solid fa-location-dot" aria-hidden="true"></i>
               <div>
                 <p class="bold">Location</p>
                 <p>Cairo, Egypt</p>
@@ -71,7 +78,7 @@
           </div>
         </div>
         <div id="right-contact-container">
-          <form action="" method="post">
+          <form id="contact-form" action="" method="post">
             <label class="contact-label" for="name">Name</label>
             <input
               class="contact-input"
@@ -96,6 +103,7 @@
               placeholder="Write your message..."
             ></textarea>
             <button type="submit" class="dark-btn-green">Send Message</button>
+            <p id="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>
@@ -103,14 +111,15 @@
 
     <footer>
       <a href="https://www.facebook.com">
-        <img src="../img/facebook.png" alt="" />
+        <i class="social-icon fa-brands fa-facebook" aria-hidden="true"></i>
       </a>
       <a href="https://www.facebook.com">
-        <img src="../img/instagram.png" alt="" />
+        <i class="social-icon fa-brands fa-instagram" aria-hidden="true"></i>
       </a>
       <a href="https://www.facebook.com">
-        <img src="../img/youtube.png" alt="" />
+        <i class="social-icon fa-brands fa-youtube" aria-hidden="true"></i>
       </a>
     </footer>
+    <script src="../js/script.js" defer></script>
   </body>
 </html>
